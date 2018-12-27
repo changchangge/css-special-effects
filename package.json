@@ -1,0 +1,24 @@
+{
+  "name": "css-effects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"browser-sync start --server --files \"./index.html,./css/style.css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/changchangge/css-special-effects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/changchangge/css-special-effects/issues"
+  },
+  "homepage": "https://github.com/changchangge/css-special-effects#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  }
+}

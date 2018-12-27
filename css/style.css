@@ -1,0 +1,62 @@
+/*
+ * @Author: changchang
+ * @Date: 2018-12-27 17:00:41
+ * @LastEditors: changchang
+ * @LastEditTime: 2018-12-27 18:05:29
+ * @Description: 
+ */
+
+ /*公用*/
+ 
+.common{
+  width: 300px;
+  height: 200px;
+  display: flex;
+  display: -webkit-flex;
+  float: left;
+  justify-content:center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 50px;
+}
+
+/*demo1*/
+
+.demo1 div{
+  width: 200px;
+  height:120px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.demo1 div img{
+  width: 100%;
+  transition: all .5s ease;
+  -moz-transition: all .5s ease; /* Firefox 4 */
+  -webkit-transition: all .5s ease; /* Safari 和 Chrome */
+  -o-transition: all .5s ease; /* Opera */
+}
+
+.demo1 div img:hover{
+  transform: scale(1.2);
+}
+
+/*demo1*/
+
+.demo2 div{
+  width: 100%;
+  height:120px;
+  overflow: hidden;
+}
+
+.demo2 div img{
+  width: 100%;
+  transition: all .5s ease;
+  -moz-transition: all .5s ease; /* Firefox 4 */
+  -webkit-transition: all .5s ease; /* Safari 和 Chrome */
+  -o-transition: all .5s ease; /* Opera */
+}
+
+.demo2 div img:hover{
+  transform: scale(0.7);
+}
