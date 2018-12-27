@@ -2,7 +2,7 @@
  * @Author: changchang
  * @Date: 2018-12-27 17:00:41
  * @LastEditors: changchang
- * @LastEditTime: 2018-12-27 18:05:29
+ * @LastEditTime: 2018-12-28 00:56:58
  * @Description: 
  */
 
@@ -24,7 +24,7 @@
 
 .demo1 div{
   width: 200px;
-  height:120px;
+  height:133px;
   overflow: hidden;
   cursor: pointer;
 }
@@ -44,19 +44,49 @@
 /*demo1*/
 
 .demo2 div{
-  width: 100%;
-  height:120px;
-  overflow: hidden;
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
 }
 
 .demo2 div img{
-  width: 100%;
-  transition: all .5s ease;
-  -moz-transition: all .5s ease; /* Firefox 4 */
-  -webkit-transition: all .5s ease; /* Safari 和 Chrome */
-  -o-transition: all .5s ease; /* Opera */
+  display: inline-block;
+  width: 200px;
+  height: 133px;
+  position: relative;
+  /* 隐藏Firefox alt文字 */
+  color: transparent;
+  overflow: hidden;
 }
 
-.demo2 div img:hover{
-  transform: scale(0.7);
+.demo2 div img:not([src]){
+  visibility: hidden;
+}
+
+.demo2 div img::after{
+  content: attr(alt);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.5;
+  background: rgba(0,0,0,.5);
+  color:white;;
+  transform: translateY(100%);
+  transition: all .2s;
+  visibility: visible;
+}
+
+.demo2 div img::before {
+  /* 淡蓝色占位背景 */
+  content: "";
+  position: absolute; left: 0;
+  width: 100%; height: 100%;
+  background-color: #f0f3f9;
+  visibility: visible;
+}
+
+.demo2 div img:hover::after{
+  transform: translateY(0);
 }
