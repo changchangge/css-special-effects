@@ -2,7 +2,7 @@
  * @Author: changchang
  * @Date: 2018-12-27 17:00:41
  * @LastEditors: changchang
- * @LastEditTime: 2018-12-28 00:56:58
+ * @LastEditTime: 2018-12-28 13:55:09
  * @Description: 
  */
 
@@ -41,7 +41,7 @@
   transform: scale(1.2);
 }
 
-/*demo1*/
+/*demo2*/
 
 .demo2 div{
   width: 200px;
@@ -88,5 +88,57 @@
 }
 
 .demo2 div img:hover::after{
+  transform: translateY(0);
+}
+
+/*demo3*/
+
+/*demo2*/
+
+.demo3 div{
+  width: 200px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.demo3 div img{
+  display: inline-block;
+  width: 200px;
+  height: 133px;
+  position: relative;
+  /* 隐藏Firefox alt文字 */
+  color: transparent;
+  overflow: hidden;
+}
+
+.demo3 div img:not([src]){
+  visibility: hidden;
+}
+
+.demo3 div img::after{
+  content: attr(alt);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 12px;
+  line-height: 1.5;
+  background: rgba(0,0,0,.5);
+  color:white;;
+  transform: translateY(100%);
+  transition: all .2s;
+  visibility: visible;
+}
+
+.demo3 div img::before {
+  content: "";
+  background: url(../images/duck.jpg);
+  background-size: cover;
+  position: absolute; left: 0;
+  width: 100%; height: 100%;
+  visibility: visible;
+}
+
+.demo3 div img:hover::after{
   transform: translateY(0);
 }
