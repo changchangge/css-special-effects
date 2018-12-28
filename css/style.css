@@ -2,7 +2,7 @@
  * @Author: changchang
  * @Date: 2018-12-27 17:00:41
  * @LastEditors: changchang
- * @LastEditTime: 2018-12-28 13:55:09
+ * @LastEditTime: 2018-12-29 01:05:11
  * @Description: 
  */
 
@@ -141,4 +141,18 @@
 
 .demo3 div img:hover::after{
   transform: translateY(0);
+}
+
+/*demo4*/
+
+.demo4 div{
+  width: 200px;
+}
+
+.demo4 div img{
+  width: 100%;
+}
+
+.demo4 div img:hover{
+  content:url("../images/duck.jpg");
 }
